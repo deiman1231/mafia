@@ -1,8 +1,10 @@
-const socket = io('/')
+const socket = io('https://mafia-go.herokuapp.com/')
 const videoGrid = document.getElementsByClassName('grid-container')
 const myPeer = new Peer(undefined, {
-  host: '/',
-  port: '3001'
+  key: peerjs,
+  host: 'mafia-go.herokuapp.com/',
+  port: '3001',
+  secure: true
 })
 const myVideo = document.getElementById('video1')
 myVideo.muted = true
