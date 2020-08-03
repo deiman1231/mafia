@@ -1,9 +1,8 @@
 const socket = io('https://mafia-go.herokuapp.com/')
 const videoGrid = document.getElementsByClassName('grid-container')
 const myPeer = new Peer(undefined, {
-  key: 'peerjs',
   host: 'mafia-go.herokuapp.com/',
-  port: '3001',
+  port: '443',
   secure: true
 })
 const myVideo = document.getElementById('video1')
